@@ -1,0 +1,24 @@
+Method Description:
+* For the final project I have used a python library called Surprise. The name Surprise stands for Simple Python RecommendatIon System Engine.
+* We can install surprise library using "pip install scikit-surprise"
+* Surprise is a Python scikit library for building and analyzing recommender systems that deal with explicit rating data.
+* I have used BaselineOnly recommendation algorithm in Surprise library.
+* Some users give higher ratings than others and some items receive higher ratings than others. We encapsulate these effects within the baseline estimates.
+* Algorithm predicting the baseline estimate for given user and business:
+    rating(user, business) = overall_average_rating + deviation(user) + deviation(business)
+
+
+Error Distribution:
+>=0 and <1: 100156
+>=1 and <2: 34386
+>=2 and <3: 6690
+>=3 and <4: 810
+>=4: 2
+
+
+RMSE:
+0.9999191286037481
+
+
+Execution Time:
+35.1266s

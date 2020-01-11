@@ -1,0 +1,23 @@
+Method Description:
+Item Based CF with LSH: Firstly I am generating all the similar businesses using Locality Sensitive Hashing Algorithm with Jaccard Similarity.
+Then I am filtering the obtained similar pairs and selecting only those whose Jaccard similarity measure is greater than or equal to 0.5.
+Lastly, I am applying Item Based Collaborative Filtering with Pearson Correlation Coefficient along with LSH, taking the advantage of similar pairs generated.
+Here, we are matching user's rated business to similar businesses.
+Item Based CF with LSH runs faster and provides better recommendations.
+Key idea is that similar businesses will be rated similarly by the same user.
+
+
+Error Distribution:
+>=0 and <1: 96909
+>=1 and <2: 37452
+>=2 and <3: 7050
+>=3 and <4: 633
+>=4: 0
+
+
+RMSE:
+1.019150491044417
+
+
+Execution Time:
+47.5273s
